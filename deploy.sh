@@ -5,8 +5,8 @@ set -e
 
 git pull
 git add -A
-git commit -m "$1 $2 $3 --all.sh main"
-git push origin main
+git commit -m "$1 $2 $3 --all.sh master"
+git push origin master
 
 # build
 npm run docs:build
@@ -24,7 +24,7 @@ git commit -m 'deploy with vuepress'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git main
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:nej1044/nej1044.github.com.git main:gh-pages
+git push -f git@github.com:nej1044/nej1044.github.com.git master:gh-pages
 
 cd -
  
