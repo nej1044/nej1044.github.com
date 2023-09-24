@@ -6,7 +6,7 @@ set -e
 git pull
 git add -A
 git commit -m "$1 $2 $3 --all.sh main"
-git push origin main -f
+git push origin main
 
 # build
 npm run docs:build
